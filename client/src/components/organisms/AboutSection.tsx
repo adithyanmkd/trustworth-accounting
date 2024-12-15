@@ -4,7 +4,7 @@ const AboutSection = () => {
   return (
     <div className="mx-auto mt-10 max-w-screen-lg px-5">
       <div className="mx-auto max-w-[800px] lg:max-w-screen-lg">
-        <h2 className="text-4xl font-semibold">About Us</h2>
+        <h2 className="font-poppins text-4xl font-semibold">About Us</h2>
         <div className="lg: items-center space-x-6 lg:flex">
           <div className="space-y-1 text-justify text-sm leading-[160%] text-[#1F1F1F] md:text-base lg:text-left">
             <p className="mt-4">

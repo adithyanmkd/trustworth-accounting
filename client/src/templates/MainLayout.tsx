@@ -1,3 +1,4 @@
+import Footer from "../components/organisms/Footer";
 import Navbar from "../components/organisms/Navbar";
 
 type ChildrenType = {
@@ -6,9 +7,10 @@ type ChildrenType = {
 
 const MainLayout = ({ children }: ChildrenType) => {
   return (
-    <div>
+    <div className="font-poppins">
       <Navbar />
       <main>{children}</main>
+      <Footer />
     </div>
   );
 };

@@ -6,6 +6,9 @@ export default {
       screens: {
         smCustom: "400px",
       },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [],
