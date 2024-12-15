@@ -1,15 +1,61 @@
+//icon or image imported
 import Menu from "../../assets/icons/menu.svg";
 import Logo from "../../assets/icons/logo.svg";
 
+//components imported
+import PrimaryBtn from "../atoms/PrimaryBtn";
+
+//modules imported
+import { useState } from "react";
+
+const navLinks = [
+  {
+    name: "Home",
+    href: "#",
+  },
+  {
+    name: "Service",
+    href: "#",
+  },
+  {
+    name: "About Us",
+    href: "#",
+  },
+];
+
 const Navbar = () => {
+  const [hoverdIndex, setHoverdIndex] = useState(-1);
+
   return (
     <div className="bg-[#374569]">
-      <div className="flex px-5 pt-5 w-full justify-between items-center">
-        <div>
-          <img src={Menu} alt="menu icon" />
+      <div className="mx-auto max-w-screen-lg">
+        <div className="flex w-full items-center justify-between px-5 pt-5 md:hidden">
+          <div>
+            <img src={Menu} alt="menu icon" />
+          </div>
+          <div>
+            <img className="w-16" src={Logo} alt="logo" />
+          </div>
         </div>
-        <div>
-          <img className="w-16" src={Logo} alt="logo" />
+        <div className="hidden items-center justify-between px-5 py-4 md:flex lg:px-0">
+          <img src={Logo} alt="logo" />
+          <div className="space-x-8">
+            {navLinks.map((link, index) => (
+              <a
+                className="relative text-white hover:text-[#A3DE2F]"
+                key={index}
+                href={link.href}
+                onMouseEnter={() => setHoverdIndex(index)}
+                onMouseLeave={() => setHoverdIndex(-1)}
+              >
+                <span>{link.name}</span>
+                {hoverdIndex === index && (
+                  <span className="absolute -bottom-1 left-0 h-0.5 w-8 bg-[#A3DE2F]"></span>
+                )}
+              </a>
+            ))}
+          </div>
+          <PrimaryBtn label="Contact Us" />
         </div>
       </div>
     </div>
