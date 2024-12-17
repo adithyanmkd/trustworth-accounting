@@ -7,6 +7,7 @@ import PrimaryBtn from "../atoms/PrimaryBtn";
 
 //modules imported
 import { useState } from "react";
+import MobileSidebar from "./MobileSidebar";
 
 const navLinks = [
   {
@@ -25,18 +26,25 @@ const navLinks = [
 
 const Navbar = () => {
   const [hoverdIndex, setHoverdIndex] = useState(-1);
+  const [sidebarIsActive, setSidebarIsActive] = useState(false);
+
+  const toggleMenu = () => setSidebarIsActive(!sidebarIsActive);
 
   return (
     <div className="bg-[#374569]">
       <div className="mx-auto max-w-screen-lg">
-        <div className="flex w-full items-center justify-between px-5 pt-5 md:hidden">
-          <div>
-            <img src={Menu} alt="menu icon" />
+        {sidebarIsActive ? (
+          <MobileSidebar toggleMenu={toggleMenu} />
+        ) : (
+          <div className="flex w-full items-center justify-between px-5 pt-5 md:hidden">
+            <div>
+              <img className="w-16" src={Logo} alt="logo" />
+            </div>
+            <div>
+              <img onClick={toggleMenu} src={Menu} alt="menu icon" />
+            </div>
           </div>
-          <div>
-            <img className="w-16" src={Logo} alt="logo" />
-          </div>
-        </div>
+        )}
         <div className="hidden items-center justify-between px-5 py-4 md:flex lg:px-0">
           <img src={Logo} alt="logo" />
           <div className="space-x-8">

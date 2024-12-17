@@ -14,7 +14,7 @@ const HeadingLinksBlock = ({ heading, links }: LinksType) => {
         {links.map((data, index) => (
           <a
             key={index}
-            className="block text-sm text-[#E3E3E3]"
+            className="block text-sm text-[#d1d1d1]"
             href={data.href}
           >
             {data.name}

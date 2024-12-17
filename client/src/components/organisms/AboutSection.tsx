@@ -2,7 +2,7 @@ import About from "../../assets/images/aboutUs.png";
 
 const AboutSection = () => {
   return (
-    <div className="mx-auto mt-10 max-w-screen-lg px-5">
+    <div id="about" className="mx-auto mt-10 max-w-screen-lg px-5">
       <div className="mx-auto max-w-[800px] lg:max-w-screen-lg">
         <h2 className="font-poppins text-4xl font-semibold">About Us</h2>
         <div className="lg: items-center space-x-6 lg:flex">

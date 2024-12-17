@@ -17,7 +17,7 @@ const ServiceCard = ({ label, description, img, mainClassname }: CardTypes) => {
     >
       <div className="max-w-[480px] md:max-w-[400px] lg:max-w-[500px]">
         <h3 className="text-[28px] font-semibold leading-[120%]">{label}</h3>
-        <p className="mt-2 text-sm leading-[160%] md:mt-4 md:text-base">
+        <p className="mt-2 text-sm leading-[160%] text-[#494949] md:mt-4 md:text-base">
           {description}
         </p>
         <PrimaryBtn label="know more" classname="mt-2 md:mt-3" />

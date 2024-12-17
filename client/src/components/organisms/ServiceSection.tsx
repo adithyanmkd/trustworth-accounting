@@ -60,7 +60,7 @@ const CardContents = [
 
 const ServiceSection = () => {
   return (
-    <div className="mt-10 px-5">
+    <div id="services" className="mt-10 px-5">
       <h1 className="text-center font-poppins text-4xl font-semibold leading-[120%] lg:text-5xl">
         Our Accounting Services
       </h1>
