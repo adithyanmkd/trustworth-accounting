@@ -1,7 +1,7 @@
 //images importing
 import Logo from "../../assets/icons/logo.svg";
-import PhoneIcon from "../../assets/icons/phone.svg";
-import EmailIcon from "../../assets/icons/email.svg";
+import PhoneIcon from "../../assets/icons/footer-phone.svg";
+import EmailIcon from "../../assets/icons/footer-email.svg";
 
 import HeadingLinksBlock from "../molecules/HeadingLinksBlock";
 
@@ -12,14 +12,14 @@ const contactDetails = [
       src: EmailIcon,
       alt: "email icon",
     },
-    p: "sample@gmail.com",
+    p: "audit@jjscas.com",
   },
   {
     icon: {
       src: PhoneIcon,
       alt: "phone icon",
     },
-    p: "8848911255",
+    p: "+91 8714769014",
   },
 ];
 
@@ -81,14 +81,14 @@ const links = [
 const Footer = () => {
   return (
     <div className="bg-[#011020]">
-      <div className="mx-auto mt-10 max-w-screen-lg px-5 py-4 text-white lg:flex">
+      <div className="mx-auto max-w-screen-lg px-5 py-4 text-white lg:flex">
         <div className="mb-8 lg:max-w-[300px]">
           <img className="w-16" src={Logo} alt="logo" />
-          <p className="mt-2 max-w-lg text-sm leading-[160%]">
+          {/* <p className="mt-2 max-w-lg text-sm leading-[160%]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
             voluptatum!
-          </p>
-          <div className="mt-8 space-y-2">
+          </p> */}
+          <div className="mt-8 space-y-2 pr-12">
             {contactDetails.map((data, index) => (
               <div key={index} className="flex space-x-3 text-sm">
                 <img src={data.icon.src} alt={data.icon.alt} />

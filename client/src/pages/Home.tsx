@@ -1,4 +1,5 @@
 import AboutSection from "../components/organisms/AboutSection";
+import Contact from "../components/organisms/Contact";
 import HeroSection from "../components/organisms/HeroSection";
 import MissionSection from "../components/organisms/MissionSection";
 import ServiceSection from "../components/organisms/ServiceSection";
@@ -11,6 +12,7 @@ const Home = () => {
       <AboutSection />
       <MissionSection />
       <ServiceSection />
+      <Contact />
     </MainLayout>
   );
 };

@@ -15,11 +15,19 @@ const navLinks = [
     href: "#",
   },
   {
-    name: "Service",
+    name: "Services",
     href: "#",
   },
   {
     name: "About Us",
+    href: "#",
+  },
+  {
+    name: "Careers",
+    href: "#",
+  },
+  {
+    name: "Our partners",
     href: "#",
   },
 ];
@@ -29,14 +37,21 @@ const Navbar = () => {
   const [sidebarIsActive, setSidebarIsActive] = useState(false);
 
   const toggleMenu = () => setSidebarIsActive(!sidebarIsActive);
-
   return (
-    <div className="bg-[#374569]">
+    <div className="fixed z-50 mb-[166px] w-full bg-[#374569]">
+      <div className="flex h-[40px] items-center justify-center bg-[#FFE8D6] text-sm font-medium">
+        <p>
+          Welcome to
+          <span className="ml-1.5 font-bold">
+            JOSE JACOB SIMINOV & ASSOCIATES
+          </span>
+        </p>
+      </div>
       <div className="mx-auto max-w-screen-lg">
         {sidebarIsActive ? (
           <MobileSidebar toggleMenu={toggleMenu} />
         ) : (
-          <div className="flex w-full items-center justify-between px-5 pt-5 md:hidden">
+          <div className="flex w-full items-center justify-between px-5 py-2 md:hidden">
             <div>
               <img className="w-16" src={Logo} alt="logo" />
             </div>
@@ -46,7 +61,7 @@ const Navbar = () => {
           </div>
         )}
         <div className="hidden items-center justify-between px-5 py-4 md:flex lg:px-0">
-          <img src={Logo} alt="logo" />
+          <img className="w-16" src={Logo} alt="logo" />
           <div className="space-x-8">
             {navLinks.map((link, index) => (
               <a

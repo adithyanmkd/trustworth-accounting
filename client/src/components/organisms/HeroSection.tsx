@@ -7,7 +7,7 @@ import ContactUsBar from "../molecules/ContactUsBar";
 const HeroSection = () => {
   return (
     <>
-      <div className="relative bg-[#374569]">
+      <div className="relative bg-[#374569] pt-[166px]">
         <div className="mx-auto max-w-screen-lg">
           <div className="px-5 pt-10">
             <h1 className="text-center font-poppins text-4xl font-bold leading-[120%] text-white sm:text-5xl md:text-6xl lg:text-7xl">
