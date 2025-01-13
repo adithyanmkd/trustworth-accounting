@@ -62,7 +62,7 @@ const ServiceSection = () => {
   return (
     <div id="services" className="mt-10 px-5">
       <h1 className="text-center font-poppins text-4xl font-semibold leading-[120%] lg:text-5xl">
-        Our Accounting Services
+        Our Services
       </h1>
       <p className="mx-auto mt-[18px] max-w-[740px] text-sm leading-[160%] text-[#505050] md:text-center md:text-base">
         Explore our comprehensive accounting consultancy services designed to

@@ -38,7 +38,7 @@ const address = [
 
 const Contact = () => {
   return (
-    <div className="mt-8 bg-[#F6F6F6] py-10">
+    <div id="contact" className="mt-8 bg-[#F6F6F6] py-10">
       <div className="mx-auto max-w-[323px] px-2 md:max-w-[950px] md:px-12">
         <div className="mx-auto max-w-[323px] items-center space-y-4 pb-6 md:max-w-[500px] lg:flex lg:max-w-[950px] lg:space-y-0">
           <ul className="mx-auto inline-block w-full space-y-2">
@@ -68,7 +68,7 @@ const Contact = () => {
           <div>
             <Map
               link={
-                "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.484558160103!2d76.46808677510849!3d11.002224654988094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba87fba9a64d651%3A0x869b11d41389074a!2sMobiz%20Technologies!5e0!3m2!1sen!2sin!4v1728023979770!5m2!1sen!2sin"
+                "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d617.7695092384643!2d76.34511146026992!3d10.017914051054362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1736761877978!5m2!1sen!2sin"
               }
             />
           </div>
