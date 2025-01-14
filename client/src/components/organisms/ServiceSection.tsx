@@ -17,6 +17,7 @@ const CardContents = [
       alt: "audit image",
     },
     mainClassname: "md:flex-row-reverse ",
+    href: "/audit-and-assurance",
   },
   {
     label: "Tax Advisory And Comliance",

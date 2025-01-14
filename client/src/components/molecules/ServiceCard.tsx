@@ -8,9 +8,16 @@ type CardTypes = {
     alt: string;
   };
   mainClassname?: string;
+  href?: string;
 };
 
-const ServiceCard = ({ label, description, img, mainClassname }: CardTypes) => {
+const ServiceCard = ({
+  label,
+  description,
+  img,
+  mainClassname,
+  href,
+}: CardTypes) => {
   return (
     <div
       className={`mx-auto mt-6 max-w-[800px] items-center justify-around md:flex md:max-w-screen-lg ${mainClassname}`}
@@ -20,7 +27,7 @@ const ServiceCard = ({ label, description, img, mainClassname }: CardTypes) => {
         <p className="mt-2 text-sm leading-[160%] text-[#5b5b5b] md:mt-4 md:text-base">
           {description}
         </p>
-        <PrimaryBtn label="know more" classname="mt-2 md:mt-3" />
+        <PrimaryBtn href={href} label="know more" classname="mt-2 md:mt-3" />
       </div>
       <div>
         <img

@@ -12,23 +12,23 @@ import MobileSidebar from "./MobileSidebar";
 const navLinks = [
   {
     name: "Home",
-    href: "#",
+    href: "/#",
   },
   {
     name: "Services",
-    href: "#services",
+    href: "/#services",
   },
   {
     name: "About Us",
-    href: "#about",
+    href: "/#about",
   },
   {
     name: "Careers",
-    href: "#",
+    href: "/#",
   },
   {
     name: "Our partners",
-    href: "#",
+    href: "/#",
   },
 ];
 
