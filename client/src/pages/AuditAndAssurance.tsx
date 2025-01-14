@@ -43,10 +43,16 @@ const blockContenct = [
   },
 ];
 
+const headingContent = {
+  heading: "Audit and Assurance",
+  description:
+    "Offering statutory, internal, and specialized audits under Indian laws, along with risk management, group reporting, and due diligence to ensure compliance, efficiency, and informed decision-making.",
+};
+
 const AuditAndAssurance = () => {
   return (
     <MainLayout>
-      <ServiceHeading />
+      <ServiceHeading {...headingContent} />
       {blockContenct.map((data, index) => (
         <TextImgBlock key={index} {...data} />
       ))}

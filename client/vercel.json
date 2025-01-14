@@ -1,5 +1,6 @@
 {
   "rewrites": [
-    { "source": "/audit-and-assurance", "destination": "/index.html" }
+    { "source": "/audit-and-assurance", "destination": "/index.html" },
+    { "source": "/tax-advisory", "destination": "/index.html" }
   ]
 }
