@@ -38,6 +38,7 @@ const CardContents = [
       alt: "accounting image",
     },
     mainClassname: "md:flex-row-reverse ",
+    href: "/accounting-and-bookkeeping",
   },
   {
     label: "Outsources CFO Services",
