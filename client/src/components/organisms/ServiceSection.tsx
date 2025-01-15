@@ -48,6 +48,7 @@ const CardContents = [
       src: OutsourseImg,
       alt: "outsource image",
     },
+    href: "/outsources-cfo-services",
   },
   {
     label: "Financial Consulting And Advisory",
