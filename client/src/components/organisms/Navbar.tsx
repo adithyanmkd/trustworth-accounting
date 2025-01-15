@@ -78,7 +78,7 @@ const Navbar = () => {
               </a>
             ))}
           </div>
-          <a href="#contact">
+          <a href="/#contact">
             <PrimaryBtn label="Contact Us" />
           </a>
         </div>

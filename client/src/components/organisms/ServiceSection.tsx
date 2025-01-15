@@ -59,6 +59,7 @@ const CardContents = [
       alt: "financial image",
     },
     mainClassname: "md:flex-row-reverse ",
+    href: "/financial-consulting",
   },
 ];
 

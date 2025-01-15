@@ -5,6 +5,7 @@ import TaxAdvisory from "./pages/TaxAdvisory";
 import Accounting from "./pages/Accounting";
 import OutsourcesServices from "./pages/OutsourcesServices";
 import Error from "./pages/Error";
+import FinancialConsulting from "./pages/FinancialConsulting";
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
             <Route
               path="/outsources-cfo-services"
               element={<OutsourcesServices />}
+            />
+            <Route
+              path="/financial-consulting"
+              element={<FinancialConsulting />}
             />
             <Route path="*" element={<Error />} />
           </Routes>
