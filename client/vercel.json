@@ -2,6 +2,8 @@
   "rewrites": [
     { "source": "/audit-and-assurance", "destination": "/index.html" },
     { "source": "/tax-advisory", "destination": "/index.html" },
-    { "source": "/accounting-and-bookkeeping", "destination": "/index.html" }
+    { "source": "/accounting-and-bookkeeping", "destination": "/index.html" },
+    { "source": "/outsources-cfo-services", "destination": "/index.html" },
+    { "source": "/financial-consulting", "destination": "/index.html" }
   ]
 }
