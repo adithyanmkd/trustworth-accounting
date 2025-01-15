@@ -30,23 +30,23 @@ const links = [
     links: [
       {
         name: "Audit and Assurance",
-        href: "#",
+        href: "/audit-and-assurance",
       },
       {
         name: "Tax Advisory and Compliance",
-        href: "#",
+        href: "/tax-advisory",
       },
       {
         name: "Accounting and Bookkeeping",
-        href: "#",
+        href: "/accounting-and-bookkeeping",
       },
       {
         name: "Outsources CFO Services",
-        href: "#",
+        href: "/outsources-cfo-services",
       },
       {
         name: "Financial Consulting and Advisory",
-        href: "#",
+        href: "/financial-consulting",
       },
     ],
   },
@@ -55,10 +55,10 @@ const links = [
     links: [
       {
         name: "About",
-        href: "#",
+        href: "#about",
       },
       {
-        name: "Partners",
+        name: "Our Partners",
         href: "#",
       },
     ],
@@ -67,7 +67,7 @@ const links = [
     heading: "Legal",
     links: [
       {
-        name: "Privacy",
+        name: "Privacy Policy",
         href: "#",
       },
       {
