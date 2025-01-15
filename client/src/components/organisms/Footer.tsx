@@ -55,7 +55,7 @@ const links = [
     links: [
       {
         name: "About",
-        href: "#about",
+        href: "/#about",
       },
       {
         name: "Our Partners",
